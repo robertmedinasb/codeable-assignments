@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form action="/login" id="form" method="post">
+        <fieldset>
+          <legend>Personal profile</legend>
+          <fieldset>
+            <label for="first-name">First name: *</label>
+            <input type="text" name="" id="first-name" required />
+            <label for="last-name">Last Name: *</label>
+            <input type="text" name="" id="last-name" required />
+            <label for="email">Email: *</label>
+            <input type="email" name="" id="email" required />
+          </fieldset>
+          <fieldset>
+            <label for="zip-code">Zip Code: *</label>
+            <input
+              id="zip-code"
+              type="text"
+              pattern="[0-9]{6}"
+              title="A six-digit number"
+              placeholder="123456"
+              required
+            />
+            <label for="password">Password: *</label>
+            <input
+              type="password"
+              name=""
+              id="password"
+              placeholder="Your password"
+              required
+            />
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>Professional profile</legend>
+          <fieldset>
+            <label for="status">Practicing status: *</label>
+            <input
+              type="radio"
+              name="status"
+              value="lawyer-0"
+              id="option-1"
+              required
+            />
+            <label for="option-1">Practicing Lawyer</label>
+            <input
+              type="radio"
+              name="status"
+              value="lawyer-1"
+              id="option-2"
+              required
+            />
+            <label for="option-2">Non Practicing Lawyer</label>
+            <input
+              type="radio"
+              name="status"
+              value="lawyer-2"
+              id="option-3"
+              required
+            />
+            <label for="option-3">Retired Lawyer</label>
+          </fieldset>
+          <fieldset>
+            <label for="legal-expertise">Area of legal expertise:</label>
+            <select name="" id="legal-expertise">
+              <option value="Antitrust">Antitrust</option>
+              <option value="Civil-rights">Civil Rights </option>
+              <option value="Immigration">Immigration</option>
+              <option value="Memes">Memes</option>
+              <option value="Gaming">Gaming</option>
+              <option value="Pretending">Pretending to work</option>
+              <option value="Other" selected>Other</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="years-experience">Years of experience: *</label>
+            <input
+              type="number"
+              name=""
+              id="years-experience"
+              min="1"
+              max="60"
+              required
+            />
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>Other information</legend>
+          <fieldset>
+            <label for="language">Choose your lenguages:</label>
+            <input
+              type="checkbox"
+              name="lenguague"
+              id="spanish"
+              value="spanish"
+            />
+            <label for="spanish">Spanish - es</label>
+            <input
+              type="checkbox"
+              name="lenguague"
+              id="english"
+              value="english"
+            />
+            <label for="english">English - en</label>
+            <input type="checkbox" name="lenguague" id="doth" value="doth" />
+            <label for="doth">Dothraki - do</label>
+            <input
+              type="checkbox"
+              name="lenguague"
+              id="krypton"
+              value="krypton"
+            />
+            <label for="krypton">Kryptonese - ky</label>
+            <input
+              type="checkbox"
+              name="lenguague"
+              id="klingon"
+              value="klingon"
+            />
+            <label for="klingon">Klingon - kl</label>
+            <input
+              type="checkbox"
+              name="lenguague"
+              id="vulcan"
+              value="vulcan"
+            />
+            <label for="vulcan">Vulcan - vu</label>
+            <input type="checkbox" name="lenguague" id="alien" value="alien" />
+            <label for="alien">Alienese - ali</label>
+            <input
+              type="checkbox"
+              name="lenguague"
+              id="elvish"
+              value="elvish"
+            />
+            <label for="elvish">Elvish - el</label>
+          </fieldset>
+          <fieldset>
+            <label for="phone">Cell Phone Number:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              maxlength="9"
+              placeholder="#######"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="erhnicity">Eathnicity: *</label>
+            <input type="radio" name="ethnicity" id="earthling" required />
+            <label for="earthling">Earthling</label>
+            <input type="radio" name="ethnicity" id="martian" required />
+            <label for="martian">Martian</label>
+            <input type="radio" name="ethnicity" id="asgardian" required />
+            <label for="asgardian">Asgardian</label>
+          </fieldset>
+        </fieldset>
+        <div>
+          <label>(*) Items are required</label>
+        </div>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </main>
+  </body>
+</html>

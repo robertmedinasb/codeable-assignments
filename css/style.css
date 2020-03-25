@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: 50px auto;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 140.62%;
+  background: #edf2f7;
+  padding-bottom: 40px;
+}
+.form-title {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 40px;
+}
+.form-subtitle {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="number"],
+.form input[type="tel"],
+.form select,
+.form label {
+  display: block;
+  width: 70%;
+  height: 46px;
+  margin: 0px auto;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 5px 4px 5px;
+}
+
+.radio,
+.agree-terms {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.radio label {
+  width: auto;
+  padding: 0 8px;
+  margin: 0;
+  height: auto;
+}
+.agree-terms label {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0;
+  height: auto;
+}
+.agree-terms {
+  margin: 10px auto;
+}
+.agree-terms label {
+  position: absolute;
+  margin-left: 25px;
+  padding: 0px;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="number"],
+.form input[type="tel"],
+.form select {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+.lighter {
+  color: #4a5568;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.form select.languages {
+  width: 30%;
+  margin-left: 15%;
+  font-weight: normal;
+  font-size: 16px;
+  height: auto;
+}
+.form select.languages::-webkit-scrollbar {
+  display: none;
+}
+
+.form input[type="submit"] {
+  color: #ffffff;
+  background: #718096;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  width: 70%;
+  margin: 10px auto;
+}

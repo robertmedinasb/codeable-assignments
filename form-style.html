@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Form Styling</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="form-title">Ready to get Started?</h1>
+      <h2 class="form-subtitle">
+        Prepare to join one of the top lawyer communities
+      </h2>
+      <form action="/login" class="form" method="post">
+        <label for="first-name">FIRST NAME</label>
+        <input type="text" name="first-name" id="first-name" required />
+        <label for="last-name">LAST NAME</label>
+        <input type="text" name="last-name" id="last-name" required />
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" required />
+        <label for="password">PASSWORD</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Your password"
+          required
+        />
+        <label for="zip-code">ZIP CODE</label>
+        <input
+          id="zip-code"
+          type="text"
+          pattern="[0-9]{6}"
+          title="A six-digit number"
+          placeholder="123456"
+          required
+        />
+        <label for="status">PRACTICING STATUS</label>
+        <select name="status" id="status" required>
+          <option value="practicing">Practicing Lawyer</option>
+          <option value="non-practicing">Non Practicing Lawyer</option>
+          <option value="retired">Retired Lawyer</option>
+        </select>
+        <label for="years-experience">YEARS OF EXPERIENCE</label>
+        <input
+          type="number"
+          name="years-experience"
+          id="years-experience"
+          min="0"
+          max="60"
+          required
+        />
+        <label for="ethnicity"
+          >ETHNICITY <strong class="lighter">(Optional)</strong></label
+        >
+        <div class="radio">
+          <input type="radio" name="ethnicity" id="earthling" />
+          <label for="earthling">Earthling</label>
+          <input type="radio" name="ethnicity" id="martian" />
+          <label for="martian">Martian</label>
+          <input type="radio" name="ethnicity" id="asgardian" />
+          <label for="asgardian">Asgardian</label>
+        </div>
+        <label for="languages">LANGUAGES</label>
+        <select multiple name="languages" id="languages" class="languages">
+          <option value="spanish">Spanish</option>
+          <option value="english">English</option>
+          <option value="vulcan">Vulcan</option>
+        </select>
+        <label for="phone"
+          >CELL PHONE NUMBER <strong class="lighter">(Optional)</strong>
+        </label>
+        <input type="tel" name="phone" id="phone" />
+        <div class="agree-terms">
+          <input type="checkbox" name="swear" id="swear" />
+          <label for="swear"
+            >I Swear That I Totally Read The Terms Of Use</label
+          >
+        </div>
+        <input type="submit" value="CREATE YOUR ACCOUNT" class="submit" />
+      </form>
+    </main>
+  </body>
+</html>

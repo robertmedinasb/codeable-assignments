@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  font-family: "Overpass", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  width: 80%;
+  margin: 0px auto;
+}
+.table {
+  width: 90%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.table th {
+  font-weight: 300;
+}
+.th-company,
+.table td:first-child {
+  text-align: left;
+  padding: 24px 36px 24px 0px;
+}
+.th-phone,
+.table td:nth-child(2) {
+  text-align: right;
+  padding: 24px 36px 24px 0px;
+}
+.th-budget,
+.table td:nth-child(3) {
+  text-align: center;
+  padding: 24px 35px;
+}
+.th-date,
+.table td:nth-child(4) {
+  text-align: right;
+  padding: 24px 10x 24px 0px;
+}
+th {
+  border-bottom: 1px solid black;
+}
+
+tr td {
+  border-bottom: 1px solid rgb(194, 194, 194);
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form Registration</title>
   </head>
   <body>
     <main>
@@ -42,30 +42,11 @@
           <legend>Professional profile</legend>
           <fieldset>
             <label for="status">Practicing status: *</label>
-            <input
-              type="radio"
-              name="status"
-              value="lawyer-0"
-              id="option-1"
-              required
-            />
-            <label for="option-1">Practicing Lawyer</label>
-            <input
-              type="radio"
-              name="status"
-              value="lawyer-1"
-              id="option-2"
-              required
-            />
-            <label for="option-2">Non Practicing Lawyer</label>
-            <input
-              type="radio"
-              name="status"
-              value="lawyer-2"
-              id="option-3"
-              required
-            />
-            <label for="option-3">Retired Lawyer</label>
+            <select name="" id="" required>
+              <option value="practicing">Practicing Lawyer</option>
+              <option value="non-practicing">Non Practicing Lawyer</option>
+              <option value="retired">Retired Lawyer</option>
+            </select>
           </fieldset>
           <fieldset>
             <label for="legal-expertise">Area of legal expertise:</label>
@@ -94,53 +75,17 @@
         <fieldset>
           <legend>Other information</legend>
           <fieldset>
-            <label for="language">Choose your lenguages:</label>
-            <input
-              type="checkbox"
-              name="lenguague"
-              id="spanish"
-              value="spanish"
-            />
-            <label for="spanish">Spanish - es</label>
-            <input
-              type="checkbox"
-              name="lenguague"
-              id="english"
-              value="english"
-            />
-            <label for="english">English - en</label>
-            <input type="checkbox" name="lenguague" id="doth" value="doth" />
-            <label for="doth">Dothraki - do</label>
-            <input
-              type="checkbox"
-              name="lenguague"
-              id="krypton"
-              value="krypton"
-            />
-            <label for="krypton">Kryptonese - ky</label>
-            <input
-              type="checkbox"
-              name="lenguague"
-              id="klingon"
-              value="klingon"
-            />
-            <label for="klingon">Klingon - kl</label>
-            <input
-              type="checkbox"
-              name="lenguague"
-              id="vulcan"
-              value="vulcan"
-            />
-            <label for="vulcan">Vulcan - vu</label>
-            <input type="checkbox" name="lenguague" id="alien" value="alien" />
-            <label for="alien">Alienese - ali</label>
-            <input
-              type="checkbox"
-              name="lenguague"
-              id="elvish"
-              value="elvish"
-            />
-            <label for="elvish">Elvish - el</label>
+            <label for="language">Languages</label>
+
+            <select multiple name="languages" id="">
+              <option value="spanish">Spanish</option>
+              <option value="english">English</option>
+              <option value="kryptonese">Kryptonese</option>
+              <option value="klingon">Klingon</option>
+              <option value="vulcan">Vulcan</option>
+              <option value="alienese">Alienese</option>
+              <option value="elvish">Elvish</option>
+            </select>
           </fieldset>
           <fieldset>
             <label for="phone">Cell Phone Number:</label>
@@ -161,6 +106,13 @@
             <input type="radio" name="ethnicity" id="asgardian" required />
             <label for="asgardian">Asgardian</label>
           </fieldset>
+        </fieldset>
+        <fieldset>
+          <input type="checkbox" name="swear" id="swear" required />
+          <label for="swear"
+            >I swear that I totally read the
+            <a href="#" class="link">terms of use</a>
+          </label>
         </fieldset>
         <div>
           <label>(*) Items are required</label>

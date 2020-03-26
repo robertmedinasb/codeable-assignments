@@ -4,18 +4,75 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
   height: 100vh;
 }
-.container {
-  width: 100%;
+nav {
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  height: 10%;
+  font-family: "Overpass", sans-serif;
   display: flex;
-  align-self: center;
-  justify-content: space-around;
-  margin: 0 8%;
   flex-wrap: wrap;
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 8%;
+}
+.logo {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  margin-right: 6px;
+}
+.nav-section ul {
+  display: flex;
+  align-items: center;
+}
+.nav-section ul li {
+  align-items: center;
+}
+
+.nav-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 12px;
+}
+.fa-user {
+  color: white;
+}
+.fa-search {
+  color: black;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+.input {
+  padding-left: 24px;
+  height: 24px;
+  border-radius: 9px;
+  border: 1px solid #ffffff;
+}
+input[type="button"] {
+  color: #000000;
+  font-weight: bold;
+  background: #ffffff;
+  border: 1px solid white;
+  height: 35px;
+  width: 75px;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 8%;
+  flex-wrap: wrap;
+  height: 90%;
+}
+
 .section {
   font-size: 16px;
   width: 266px;
@@ -48,4 +105,25 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #7a7a7a;
+}
+strong {
+  font-size: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 1020px) {
+  .size-first {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .size-second {
+    display: none;
+  }
+
+  .input {
+    width: 150px;
+  }
+  .logo {
+    height: 45px;
+  }
 }

@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #544e4e;
+}
+.container h1 {
+  color: #a0a2a6;
+}
+.img {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 20px auto;
+}
+.insta-container {
+  margin: 0 auto;
+  width: 60%;
+}
+.insta-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: stretch;
+}
+.insta-img {
+  display: flex;
+  margin: 5px 10px;
+  padding: 0;
+  align-self: center;
+}
+.insta-img img {
+  width: 100%;
+}
+.logo {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+.logo img {
+  height: 30px;
+  margin: 0px 17px;
+}
+@media (max-width: 1000px) {
+  .insta-container,
+  .logo {
+    width: 90%;
+  }
+  .insta-img,
+  .insta-img img,
+  .logo img {
+    margin: 0;
+  }
+  .logo img {
+    height: 20px;
+  }
+}

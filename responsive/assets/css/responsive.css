@@ -11,7 +11,7 @@ body{
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 1fr 1fr;  
+    grid-template-rows: auto auto;  
     grid-template-columns:auto; 
 }
 
@@ -29,7 +29,7 @@ body{
 }
 
 .section-div{
-    margin: 0 auto;
+    margin: 0 20px;
     max-width: 300px;
 }
 
@@ -69,11 +69,13 @@ body{
 .feature-section:first-child{
     display: flex;
     align-items: center;
-}
-.feature-image img{
     width: 100%;
 }
+.feature-section img{
+    max-width: 555px;
+}
 .feature-section:last-child{
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,6 +103,90 @@ body{
 .features-div h3{
     margin-top: 0;
 }
-@media (max-width:900px) (min-width:769px){
+@media (min-width:769px) and (max-width:1440px){
+    .container-grid{
+        width: 90%;
+        grid-template-rows: auto ;
 
+    }
+    .container-section:first-child{
+        grid-template-rows: ;
+        grid-template-columns: auto auto;
+    }
+    .container-section:last-child{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+    }
+    .feature-section:last-child{
+
+        margin: 11px auto;  
+        display: flex; 
+    }
+    .feature-row-2{
+        display: flex;
+    }
+    .section-title{
+        margin: 10px 0;
+    }
+
+    .feature-section img{
+        max-width: none;
+        width: 100%;
+    }
+}
+@media (max-width:768px){
+    .feature-section img{
+        max-width: none;
+        width: 100%;
+    }
+    .container-grid{
+        width: 100%;
+    }
+    .container-section:first-child{
+        display: block;
+    }
+    @media (max-width:768px){
+        .container-grid{
+            width: 100%;
+        }
+        .container-section:first-child{
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .section-section:last-child{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-section:last-child,
+    .section-section:first-child{
+        width: 100%;
+        display: block;
+    }
+    .container-section:last-child{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+    }
+    .feature-row-2{
+        grid-template-rows: 50% 50%;
+    }
+    .feature-section:last-child{ 
+        margin: 0;
+        order: -1;
+    }
+
+    .feature-section:first-child,
+    .feature-section:last-child{
+        padding: 0;
+        display: block;
+    }
+    .features-section{
+    }
 }

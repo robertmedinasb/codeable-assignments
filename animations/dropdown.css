@@ -1,0 +1,43 @@
+.dropdown-list {
+  width: 80%;
+  margin: 0 auto;
+}
+.first-drop {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.first-drop > li {
+  padding: 10px 0;
+  border-bottom: 2px solid #ebebeb;
+}
+.first-drop li a {
+  text-decoration: none;
+  color: #595959;
+  padding: 0 20px;
+
+  cursor: pointer;
+}
+.second-drop {
+  display: none;
+}
+.first-drop > li:hover {
+  border-bottom: 2px solid rgb(9, 138, 224);
+}
+.first-drop > li:hover > a {
+  color: rgb(9, 138, 224);
+}
+.li-3:hover > .second-drop {
+  display: block;
+  position: absolute;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding: 5px 40px 5px 10px;
+  margin-top: 10px;
+}
+.li-3:hover > .second-drop li {
+  margin: 20px auto;
+}

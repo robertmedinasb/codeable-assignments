@@ -42,7 +42,6 @@ img {
   height: 220px;
   width: 220px;
   display: flex;
-  opacity: 0;
   border-radius: 50% 50%;
   justify-content: center;
   align-items: center;

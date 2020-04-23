@@ -40,12 +40,12 @@ def score(dice)
     hsh[n] += 1
   end
   again = results.each do |key, value|
-    next unless value == 3
+    next unless value > 2
 
-    results[key] -= 3
     total += 1000 if key == 1
     total += 500 if key == 5
-    total += key * 100
+    total += key * 100 if key != 1 && key != 5
+    results[key] -= 3
   end
   again.each do |key, value|
     total += 100 * value if key == 1 && results[key].positive?
